@@ -1,0 +1,32 @@
+﻿<Page x:Class="WpfApp7.Views.SignlnPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp7.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SignlnPage">
+
+    <Grid Background="Gray">
+
+        <StackPanel VerticalAlignment="Center"
+                    Width="200"
+                    HorizontalAlignment="Center">
+            <TextBlock Text="Логин:" Height="20"/>
+            <TextBox x:Name ="TxbLogin"/>
+            <TextBlock Text="Пароль:" Height="18"/>
+            <TextBox x:Name="TxbPassword"/>
+
+            <Button Height="20"
+                    Margin="5"
+                    Click="BtnSignIn_Click"
+                    Content="Войти"/>
+
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Left" Height="55" Margin="254,41,0,0" TextWrapping="Wrap" Text="Фильмотека" VerticalAlignment="Top" Width="292" FontSize="48" TextDecorations="Underline" FontWeight="Bold"/>
+        <TextBlock Height="37" Margin="272,96,0,0" TextWrapping="Wrap" Text="Фильмы на любой вкус" VerticalAlignment="Top" Width="261" FontSize="24" TextDecorations="{x:Null}" HorizontalAlignment="Left"/>
+        <Image HorizontalAlignment="Left" Height="92" VerticalAlignment="Top" Width="107" Margin="551,41,0,0" Source="pngwing.com (1).png"/>
+
+    </Grid>
+</Page>
